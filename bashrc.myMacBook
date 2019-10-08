@@ -1,0 +1,48 @@
+#!/bin/bash
+
+## user-defined alias
+alias ll='ls -l'
+alias gp='grep -nr --color=auto'
+alias setPython2.7='export PATH=/usr/bin/:$PATH'
+alias getArxiv='cd /Users/wuwenjie/workdir/WebSpider && /usr/bin/python arxiv.py'
+alias highlighthelp='echo "highlight --style=github -k \"Fira Code\" -K 18 -u \"utf-8\" -t 4 -O rtf filename | pbcopy"'
+alias jn='jupyter-notebook --NotebookApp.iopub_data_rate_limit=10000000000'
+alias ihepjn='ssh -L localhost:1234:localhost:8888 wenjie@lxslc6.ihep.ac.cn'
+
+# user-defined alias: temporary
+alias lc='cd ~/workdir/LeetCode'
+
+# mathematica
+alias mma='/Applications/Mathematica.app/Contents/MacOS/MathKernel'
+
+export PATH=$PATH:/Users/wuwenjie/workdir/MyScript:/Applications/CMake.app/Contents/bin
+# login ihep farm without input password
+alias ihep='LoginIHEPFarm.exp'
+
+# VirtualBox 
+alias startvbox='VBoxManage startvm "CentOS INFN Geant4 (2017)" --type headless'
+alias stopvbox='VBoxManage controlvm "CentOS INFN Geant4 (2017)" poweroff'
+alias qvbox='VBoxManage list runningvms'
+alias vbox='LoginVirtualBox.exp'
+
+# VMWare fusion
+alias vmrun='/Applications/VMware\ Fusion.app/Contents/Library/vmrun'
+alias startvm='vmrun start /Users/wuwenjie/Documents/library/G4-10.03.P01-CentOS7_en/CENBG-G4-CentOS7\ 64-bit.vmx nogui'
+alias stopvm='vmrun stop /Users/wuwenjie/Documents/library/G4-10.03.P01-CentOS7_en/CENBG-G4-CentOS7\ 64-bit.vmx'
+alias qvm='vmrun list'
+
+# root
+alias root='root -l'
+alias g++root='g++ `root-config --cflags` `root-config --libs`'
+source /Users/wuwenjie/soft/root-6.16.00-install/bin/thisroot.sh
+alias root614='source /Applications/root_v6.14.06/bin/thisroot.sh'
+
+## user-defined setup
+export CLICOLOR=1
+export LSCOLORS=gxfxaxdxcxegedabagacad
+
+# octave
+alias octave='octave -q -f'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
