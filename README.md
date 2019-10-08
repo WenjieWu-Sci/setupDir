@@ -1,14 +1,14 @@
 # setupDir
 Configuration files
 
-##bash的配置文件
+## bash的配置文件
 
-*bashrc.myMacBook*
+**bashrc.myMacBook**
 
-##vim: vim的配置文件
+## vim: vim的配置文件
 
-*vimrc*
+**vimrc**
 
-*vimrc.local*
+**vimrc.local**
 
 **vimrc.bundles**
